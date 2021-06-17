@@ -1,0 +1,23 @@
+{
+  "name": "appium-web-browser",
+  "version": "1.0.0",
+  "description": "appium-web-browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tak1wa/appium-web-browser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tak1wa/appium-web-browser/issues"
+  },
+  "homepage": "https://github.com/Tak1wa/appium-web-browser#readme",
+  "dependencies": {
+    "webdriverio": "^7.7.3"
+  }
+}
