@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Tak1wa/appium-web-browser#readme",
   "dependencies": {
     "webdriverio": "^7.7.3"
-  }
+  },
+  "bundledDependencies": [
+    "webdriverio"
+  ]
 }
