@@ -10,6 +10,11 @@ const opts = {
     // deviceName: "Android Emulator",
     // browserName: "Chrome",
     // automationName: "UiAutomator2"
+    // platformName: "iOS",
+    // platformVersion: "14.5",
+    // deviceName: "iPhone 8",
+    // browserName: "Safari",
+    // automationName: "XCUITest"
   }
 };
 
@@ -22,12 +27,13 @@ async function main () {
 
   const menuButton = await client.$(".header__menu");
   await menuButton.waitForDisplayed({timeout: DEFAULT_TIMEOUT});
+  await sleep(3000);
   await client.saveScreenshot(process.env.SCREENSHOT_PATH + "/1.png");
 
   await menuButton.click();
 
   await sleep(2000);
-  await client.touchScroll(0, 500);
+  //await client.touchScroll(0, 500);
   await sleep(1000);
 
   const siryoButton = await client.$('a[href="/download/company-overview/"]');
@@ -37,6 +43,8 @@ async function main () {
   await siryoButton.click();
   await sleep(5000);
   await client.saveScreenshot(process.env.SCREENSHOT_PATH + "/3.png");
+
+  await sleep(10000); //add
 
   await client.deleteSession();
 }
